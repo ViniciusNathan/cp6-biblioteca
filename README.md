@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-Acesse `http://localhost:5173` no navegador.
+Acesse `https://cp6-biblioteca.vercel.app` no navegador.
 
 ## Estrutura
 
