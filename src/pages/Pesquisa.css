@@ -1,0 +1,78 @@
+.pagina {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pagina__titulo {
+  color: #e94560;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.busca-container {
+  margin-bottom: 2rem;
+}
+
+.busca-input {
+  width: 100%;
+  max-width: 480px;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #16213e;
+  color: #eee;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.busca-input::placeholder {
+  color: #777;
+}
+
+.busca-input:focus {
+  border-color: #e94560;
+}
+
+.grid-livros {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.sem-resultados {
+  color: #aaa;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  gap: 1rem;
+  color: #aaa;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #333;
+  border-top-color: #e94560;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.erro-msg {
+  color: #e94560;
+  font-size: 1.1rem;
+}
